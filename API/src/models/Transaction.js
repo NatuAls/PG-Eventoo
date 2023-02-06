@@ -9,7 +9,7 @@ module.exports = (sequelize) => {
             unique: true,
             defaultValue: DataTypes.UUIDV4,
           },
-        isPaid: {
+        status: {
             type: DataTypes.BOOLEAN,
             allowNull: true,
         },

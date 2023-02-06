@@ -1,9 +1,9 @@
 const { Event, } = require("../db");
 
-//get. de usuarios logeados uno devuelve
+
 const createTransaction = async (req, res) => {
     try {
-    const { isPaid, payment_proof } = req.body;
+    const { status, payment_proof } = req.body;
     const buyerId = req.userId;
 
     if (!isPaid || !payment_proof) {
