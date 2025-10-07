@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import axios from "axios";
 import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 //pages
 import CreateEvent from "./Pages/CreateEvent";
 import Setting from "./Pages/Setting";
@@ -43,6 +44,8 @@ export const API = axios.create({
   }
 });
 
+const theme = createTheme();
+
 function App() {
   
   const { showSessionModal, setShowSessionModal } = useContext(SessionContext)
@@ -69,6 +72,7 @@ function App() {
 
   return (
 
+  <ThemeProvider theme={theme}>
     <BrowserRouter>
       {showSessionModal !== null && <SessionModal />}
       <Routes>
@@ -94,6 +98,7 @@ function App() {
         <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
+  <ThemeProvider>
 
   );
 }
