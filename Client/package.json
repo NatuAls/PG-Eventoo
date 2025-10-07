@@ -18,7 +18,6 @@
     "@nivo/pie": "^0.80.0",
     "@nivo/radar": "^0.80.0",
     "@nivo/radial-bar": "^0.80.0",
-    "@reach/combobox": "^0.18.0",
     "@react-google-maps/api": "^2.18.1",
     "@reduxjs/toolkit": "^1.9.2",
     "@testing-library/jest-dom": "^5.16.5",
