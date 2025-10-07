@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { axiosModeCategories } from "../../../Slice/Filter/categorieSlice";
 import { getAllEvents } from "../../../Slice/Admin/AdminSlice";
 import { PieChart, Pie, Cell, Legend, Tooltip } from "recharts";
-import { makeStyles } from "@material-ui/core/styles";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import { makeStyles } from "@mui/material/styles";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const useStyles = makeStyles({
   chartContainer: {
