@@ -11,7 +11,7 @@ import CarouselPremium from './CarouselPremium/CarouselPremium';
 import { style } from '@mui/system';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 
 
