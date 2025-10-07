@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { axiosModeCategories } from "../../../../Slice/Filter/categorieSlice";
 import { getAllEvents } from "../../../../Slice/Admin/AdminSlice";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 import Pie from "./Pie/Pie";
 import StackedBarChart from "./Table/TableStadistic";
 
